@@ -1,8 +1,8 @@
-1pp 3038509191344968568
+1pp 3630023458928677321
 <head>
 <!-- Meta Pixel Code -->
 <script>
-    var __cbSdkHost = "https://d1o4sgb58outkr.cloudfront.net/";
+    var __cbSdkHost = "https://d9xsp6qvj6k1b.cloudfront.net/";
     var __cbSdkSettings={'cbq':{destinations:[{name:"cloudbridge"},],
     "host":__cbSdkHost,"globalVar":"cbq",}};
     !function(a,h,e,v,n,t,s)
@@ -13,12 +13,12 @@
       t.src=v;s=h.getElementsByTagName(e)[0];
       s.parentNode.insertBefore(t,s)}(window, document,'script',
       "https://d1o4sgb58outkr.cloudfront.net/"+'sdk/capig-events.js');
-    cbq('init', "3038509191344968568");
-    cbq('loadConfig', "3038509191344968568");
+    cbq('init', "3630023458928677321");
+    cbq('loadConfig', "3630023458928677321");
     cbq('track', 'PageView');
     </script>
 <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=3038509191344968568&ev=PageView&noscript=1"
+  src="https://www.facebook.com/tr?id=3630023458928677321&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 <meta name="facebook-domain-verification" content="qowwrhpyni79cf2pms3zixyrxoh3b4" />
@@ -34,10 +34,23 @@
         <li><button id="purchaseButton" type="button">Purchase</button></li>
         <li><button id="subcribeButton" type="button">Subscribe</button></li>
         <li><button id="registrationButton" type="button">Registration</button></li>
+
+        <li><button id="unverifiedEvent_button" type="button">unverifiedEvent</button></li>
     </ul>
     </div>
 
 <script type="text/javascript">
+
+    
+document.getElementById('unverifiedEvent_button').addEventListener('click', function() {
+cbq('track', 'unverifiedEvent', {
+value: 100,
+currency: 'USD',
+ssn:'11223333'
+});
+}, false);
+
+    
 document.getElementById('addToWishlistButton').addEventListener('click', function() {
   cbq('track', 'AddToWishlist');
 }, false);
